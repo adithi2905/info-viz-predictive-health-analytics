@@ -39,12 +39,14 @@ If there are no records in the medical history file, we assume that the patient 
 ## Kaggle Datasets
 
 ### **AQI By State 1980–2022.csv**
+Source: Air Quality Index by State (1980–2022) – https://www.kaggle.com/datasets/adampq/air-quality-index-by-state-1980-2022
 
 <img width="156" height="134" alt="image" src="https://github.com/user-attachments/assets/64e69556-2be0-41b3-a1d6-f776d0a690eb" />
 
 ---
 
 ### **Health_care_access.csv**
+Healthcare Access and Quality Index: https://www.kaggle.com/datasets/valchovalev/healthcareaccessandqualityindex
 
 <img width="151" height="113" alt="image" src="https://github.com/user-attachments/assets/d04b47e3-7e66-4a34-b943-0fbe271928ae" />
 
