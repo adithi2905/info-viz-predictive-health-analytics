@@ -4,6 +4,10 @@
 
 Built interactive, state-level visualizations of U.S. life expectancy and modeled the influence of chronic diseases, personal behaviors, environmental conditions, and population factors using machine learning.
 
+Dashboard Links
+Past and Current trends: https://app.powerbi.com/view?r=eyJrIjoiYmNjM2M3MDctYjhjMy00YzdhLTljZmEtNjlkMDBmMmFjMmYzIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+Predicted Future Trends: https://app.powerbi.com/view?r=eyJrIjoiNDQyMzFkMWEtOTcxYi00NmQwLThlNTYtNTkxOTUyMDVlZDUwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+
 ---
 
 ## Client-Provided Datasets
@@ -56,9 +60,9 @@ These datasets were sourced from Kaggle and combined with the client-provided da
 
 ## Data Integration
 
-The final dataset combines patient profiles, medical history, and health events with environmental and healthcare access data to make the dataset richer.
+The final dataset combines patient profiles, medical history, and healthcare events with environmental and healthcare access data to create a more comprehensive view of health outcomes.
 
-The client-provided datasets focus on patients’ choices, medical history, and healthcare events. However, these are not the only factors that determine disease prevalence and life expectancy. Environmental factors such as pollution, population characteristics, and healthcare access also contribute to life expectancy and the likelihood of chronic diseases.
+While the client-provided datasets focus on patients’ personal choices, medical history, and healthcare events, these factors alone do not fully explain disease prevalence or life expectancy. Broader contextual factors - such as environmental pollution, population characteristics, and access to healthcare - also play a significant role in influencing health outcomes. To capture this broader context, we integrated two Kaggle datasets at the state and year level, retaining only relevant fields and discarding unnecessary attributes. The resulting dataset is enriched with both individual-level and contextual information and is structured as shown below.
 
 <img width="182" height="131" alt="image" src="https://github.com/user-attachments/assets/76102e90-3a74-4982-90d7-ad6e659f204b" />
 
@@ -70,7 +74,7 @@ The goal of this analysis is to understand life expectancy and survival patterns
 
 Since life expectancy information was implicit in the client-provided data, we derived longevity patterns using available timestamps. Specifically, we extracted the year from the event_date column in the health_events dataset and the year from the diagnosis_date column in the medical history dataset.
 
-For simplification, and due to the absence of explicit event–diagnosis linkage, longevity was computed as the absolute difference between the event year and the diagnosis year, regardless of whether the healthcare event occurred before or after the diagnosis. While this assumption may not fully reflect real-world clinical timelines—and patients may be associated with multiple chronic conditions that correspond to different healthcare events—it was necessary given the structure of the mocked-up data.
+For simplification, and due to the absence of explicit event–diagnosis linkage, longevity was computed as the absolute difference between the event year and the diagnosis year, regardless of whether the healthcare event occurred before or after the diagnosis. The cases with outcome fatal or recovered were considered for this analysis and the ongoing cases were deliberately ignored as the status of the condition remains unclear. While this assumption may not fully reflect real-world clinical timelines—and patients may be associated with multiple chronic conditions that correspond to different healthcare events—it was necessary given the structure of the mocked-up data.
 
 Because the health events dataset does not explicitly associate individual events with specific chronic conditions, this assumption was adopted to enable consistent estimation of longevity patterns and downstream analysis.
 
@@ -101,3 +105,11 @@ In addition to prevalence forecasting, a Random Survival Forest (RSF) model was 
 Together, these models complement the dashboard’s descriptive visualizations by providing predictive insights into future disease burden and survival outcomes. While the predictions are based on historical trends and modeled assumptions, they offer valuable early signals for public health planning, resource allocation, and comparative risk assessment across states. Continuous retraining and incorporation of updated data are expected to further improve model accuracy in future iterations.
 
 ---
+
+## Conclusion
+
+This project brings together individual-level health records and broader state-level context to create a richer, more interpretable view of life expectancy patterns across the U.S. By integrating patient profiles, medical history, and healthcare events with environmental (AQI) and healthcare access indicators, the dashboard enables state-by-state comparison of how chronic disease burden, behavioral choices, and external conditions relate to longevity outcomes. Because the client-provided data is mocked and does not explicitly link events to specific conditions, we made transparent simplifying assumptions to derive consistent longevity measures and support meaningful visual exploration.
+
+Beyond descriptive insights, the forecasting components extend the dashboard into a forward-looking tool. CatBoost-based prevalence forecasting provides short- and medium-term signals on potential future disease burden, while the Random Survival Forest model offers a way to estimate survival risk patterns using the derived longevity proxy and contextual features. Together, these outputs support comparative analysis and early planning—while also highlighting opportunities for future improvement, such as incorporating per-capita normalization, stronger event–condition linkage, and validation with real clinical timelines.
+
+
