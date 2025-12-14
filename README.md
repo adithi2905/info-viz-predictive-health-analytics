@@ -91,3 +91,13 @@ Additionally, we analyzed how disease severity influences outcomes, providing in
 Finally, we computed the overall average longevity and used a performance indicator to visualize how longevity is distributed across different states, enabling comparative analysis at the state level.
 
 ---
+
+## Prediction Models and Forecasting Approach
+
+To extend descriptive longevity analysis into forward-looking insights, machine learning–based predictive models were incorporated. A CatBoost forecasting model was used to predict short- and medium-term disease prevalence trends across states. This model was selected for its ability to handle heterogeneous feature types, capture non-linear relationships, and perform robustly on structured health and environmental data. Historical prevalence, temporal features, environmental indicators (such as AQI), healthcare access metrics, and demographic attributes were used as inputs to generate one-year and five-year prevalence forecasts.
+
+In addition to prevalence forecasting, a Random Survival Forest (RSF) model was employed to estimate patient survival patterns and risk over time. RSF is well-suited for censored survival data and enables modeling of complex interactions between clinical, demographic, and environmental variables without strong parametric assumptions. The model was trained using derived longevity measures, disease severity, health conditions, and contextual factors to estimate survival probabilities and risk stratification across different time horizons.
+
+Together, these models complement the dashboard’s descriptive visualizations by providing predictive insights into future disease burden and survival outcomes. While the predictions are based on historical trends and modeled assumptions, they offer valuable early signals for public health planning, resource allocation, and comparative risk assessment across states. Continuous retraining and incorporation of updated data are expected to further improve model accuracy in future iterations.
+
+---
