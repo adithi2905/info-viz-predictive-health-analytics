@@ -73,3 +73,19 @@ For simplification, and due to the absence of explicit event–diagnosis linkage
 Because the health events dataset does not explicitly associate individual events with specific chronic conditions, this assumption was adopted to enable consistent estimation of longevity patterns and downstream analysis.
 
 ---
+
+## Dashboard Design and Key Visualizations
+
+The dashboard was designed to show the three factors that influence life expectancy. One of the key aspects focuses on the personal choices of individuals, such as smoking, drinking, and opioid addiction, analyzed among people with a sedentary lifestyle as well as those who are physically active.
+
+We also visualized opioid addiction among people living alone. These insights can be filtered across various states and viewed over a range of years using a year slider or slicer.
+
+We further explored how air quality varies with changes in population across states. In future iterations, we plan to replace total population with per-capita measures to provide a more normalized and meaningful comparison.
+
+To analyze health outcomes in more detail, we examined the relationship between longevity and the number of chronic disease cases using a combination of line charts and bar graphs across various states. This helped identify trends and variations in longevity patterns associated with different chronic conditions.
+
+Additionally, we analyzed how disease severity influences outcomes, providing insight into how more severe conditions correlate with changes in longevity.
+
+Finally, we computed the overall average longevity and used a performance indicator to visualize how longevity is distributed across different states, enabling comparative analysis at the state level.
+
+---
