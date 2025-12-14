@@ -61,5 +61,3 @@ The client-provided datasets focus on patients’ choices, medical history, and 
 <img width="182" height="131" alt="image" src="https://github.com/user-attachments/assets/76102e90-3a74-4982-90d7-ad6e659f204b" />
 
 ---
-
-This version is **faithful, clean, and submission-ready**.
