@@ -1,7 +1,7 @@
 ---
 
 # **A Machine Learning–Driven Visualization of U.S. Life Expectancy: Chronic Disease Burden, Behavioral Choices, Environment, and Population by State**
-
+---
 Built interactive, state-level visualizations of U.S. life expectancy and modeled the influence of chronic diseases, personal behaviors, environmental conditions, and population factors using machine learning.
 
 Dashboard Links
