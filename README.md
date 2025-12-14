@@ -4,10 +4,11 @@
 ---
 Built interactive, state-level visualizations of U.S. life expectancy and modeled the influence of chronic diseases, personal behaviors, environmental conditions, and population factors using machine learning.
 
-Dashboard Links
-Past and Current trends: https://app.powerbi.com/viewr=eyJrIjoiYmNjM2M3MDctYjhjMy00YzdhLTljZmEtNjlkMDBmMmFjMmYzIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+# **Dashboard Links:**
 
-*Predicted Future Trends: https://app.powerbi.com/viewr=eyJrIjoiNDQyMzFkMWEtOTcxYi00NmQwLThlNTYtNTkxOTUyMDVlZDUwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+ Past and Current trends: https://app.powerbi.com/viewr=eyJrIjoiYmNjM2M3MDctYjhjMy00YzdhLTljZmEtNjlkMDBmMmFjMmYzIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+
+Predicted Future Trends: https://app.powerbi.com/viewr=eyJrIjoiNDQyMzFkMWEtOTcxYi00NmQwLThlNTYtNTkxOTUyMDVlZDUwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
 
 ---
 
