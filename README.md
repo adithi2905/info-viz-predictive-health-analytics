@@ -61,3 +61,15 @@ The client-provided datasets focus on patients’ choices, medical history, and 
 <img width="182" height="131" alt="image" src="https://github.com/user-attachments/assets/76102e90-3a74-4982-90d7-ad6e659f204b" />
 
 ---
+
+## Life Expectancy and Longevity Estimation Strategy
+
+The goal of this analysis is to understand life expectancy and survival patterns associated with chronic conditions across various U.S. states, and to leverage historical and current trends to forecast future patterns using machine learning models.
+
+Since life expectancy information was implicit in the client-provided data, we derived longevity patterns using available timestamps. Specifically, we extracted the year from the event_date column in the health_events dataset and the year from the diagnosis_date column in the medical history dataset.
+
+For simplification, and due to the absence of explicit event–diagnosis linkage, longevity was computed as the absolute difference between the event year and the diagnosis year, regardless of whether the healthcare event occurred before or after the diagnosis. While this assumption may not fully reflect real-world clinical timelines—and patients may be associated with multiple chronic conditions that correspond to different healthcare events—it was necessary given the structure of the mocked-up data.
+
+Because the health events dataset does not explicitly associate individual events with specific chronic conditions, this assumption was adopted to enable consistent estimation of longevity patterns and downstream analysis.
+
+---
