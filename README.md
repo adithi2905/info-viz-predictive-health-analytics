@@ -39,12 +39,14 @@ If there are no records in the medical history file, we assume that the patient 
 ## Kaggle Datasets
 
 ### **AQI By State 1980–2022.csv**
+Source: Air Quality Index by State (1980–2022) – https://www.kaggle.com/datasets/adampq/air-quality-index-by-state-1980-2022
 
 <img width="156" height="134" alt="image" src="https://github.com/user-attachments/assets/64e69556-2be0-41b3-a1d6-f776d0a690eb" />
 
 ---
 
 ### **Health_care_access.csv**
+Healthcare Access and Quality Index: https://www.kaggle.com/datasets/valchovalev/healthcareaccessandqualityindex
 
 <img width="151" height="113" alt="image" src="https://github.com/user-attachments/assets/d04b47e3-7e66-4a34-b943-0fbe271928ae" />
 
@@ -87,5 +89,15 @@ To analyze health outcomes in more detail, we examined the relationship between 
 Additionally, we analyzed how disease severity influences outcomes, providing insight into how more severe conditions correlate with changes in longevity.
 
 Finally, we computed the overall average longevity and used a performance indicator to visualize how longevity is distributed across different states, enabling comparative analysis at the state level.
+
+---
+
+## Prediction Models and Forecasting Approach
+
+To extend descriptive longevity analysis into forward-looking insights, machine learning–based predictive models were incorporated. A CatBoost forecasting model was used to predict short- and medium-term disease prevalence trends across states. This model was selected for its ability to handle heterogeneous feature types, capture non-linear relationships, and perform robustly on structured health and environmental data. Historical prevalence, temporal features, environmental indicators (such as AQI), healthcare access metrics, and demographic attributes were used as inputs to generate one-year and five-year prevalence forecasts.
+
+In addition to prevalence forecasting, a Random Survival Forest (RSF) model was employed to estimate patient survival patterns and risk over time. RSF is well-suited for censored survival data and enables modeling of complex interactions between clinical, demographic, and environmental variables without strong parametric assumptions. The model was trained using derived longevity measures, disease severity, health conditions, and contextual factors to estimate survival probabilities and risk stratification across different time horizons.
+
+Together, these models complement the dashboard’s descriptive visualizations by providing predictive insights into future disease burden and survival outcomes. While the predictions are based on historical trends and modeled assumptions, they offer valuable early signals for public health planning, resource allocation, and comparative risk assessment across states. Continuous retraining and incorporation of updated data are expected to further improve model accuracy in future iterations.
 
 ---
