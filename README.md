@@ -32,7 +32,7 @@ Built interactive, state-level visualizations of U.S. life expectancy and modele
 
 This diagram illustrates the end-to-end workflow of the project, starting from data acquisition and data modeling, followed by the application of machine learning techniques. The pipeline supports both exploratory visualization of past and current longevity trends and predictive modeling to generate future longevity estimates (2026–2040), which are then visualized for comparative analysis.
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 
 ---
