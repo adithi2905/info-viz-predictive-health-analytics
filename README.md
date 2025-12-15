@@ -7,7 +7,6 @@ Built interactive, state-level visualizations of U.S. life expectancy and modele
 ## Project Sponsor (Client-Provided Info)
 
 - **Project Sponsor:** Venkata Gopi Kolla  
-- **Sponsor Email:** kolla.gopi@gmail.com  
 
 **Project Description (Goal / Scientific or Practical Value):**  
 **Goal:** This project aims to analyze health risks, disease patterns, and policy impacts using synthetic patient data. It enables predictive modeling, epidemiological research, and policy evaluation through insights into regional health disparities, historical disease trends, and environmental factors.
@@ -27,6 +26,14 @@ Built interactive, state-level visualizations of U.S. life expectancy and modele
 
 - **Predicted Future Trends:**  
   https://app.powerbi.com/view?r=eyJrIjoiNDQyMzFkMWEtOTcxYi00NmQwLThlNTYtNTkxOTUyMDVlZDUwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+
+---
+## System Design and Modeling Workflow
+
+This diagram illustrates the end-to-end workflow of the project, starting from data acquisition and data modeling, followed by the application of machine learning techniques. The pipeline supports both exploratory visualization of past and current longevity trends and predictive modeling to generate future longevity estimates (2026–2040), which are then visualized for comparative analysis.
+
+![alt text](image.png)
+
 
 ---
 
