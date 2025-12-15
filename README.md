@@ -1,22 +1,38 @@
----
-
 # **A Machine Learning–Driven Visualization of U.S. Life Expectancy: Chronic Disease Burden, Behavioral Choices, Environment, and Population by State**
----
+
 Built interactive, state-level visualizations of U.S. life expectancy and modeled the influence of chronic diseases, personal behaviors, environmental conditions, and population factors using machine learning.
 
-# **Dashboard Links:**
+---
 
- Past and Current trends: 
-https://app.powerbi.com/view?r=eyJrIjoiYmNjM2M3MDctYjhjMy00YzdhLTljZmEtNjlkMDBmMmFjMmYzIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
- 
-Predicted Future Trends: https://app.powerbi.com/view?r=eyJrIjoiNDQyMzFkMWEtOTcxYi00NmQwLThlNTYtNTkxOTUyMDVlZDUwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+## Project Sponsor (Client-Provided Info)
+
+- **Project Sponsor:** Venkata Gopi Kolla  
+- **Sponsor Email:** kolla.gopi@gmail.com  
+
+**Project Description (Goal / Scientific or Practical Value):**  
+**Goal:** This project aims to analyze health risks, disease patterns, and policy impacts using synthetic patient data. It enables predictive modeling, epidemiological research, and policy evaluation through insights into regional health disparities, historical disease trends, and environmental factors.
+
+**Scientific & Practical Value:**
+- **Public Health Insights:** Tracks asthma in industrial cities, mental health trends, and disease risk factors.
+- **Policy Impact:** Assesses the Clean Air Act (1970) on pollution deaths, polio vaccination success, and opioid addiction trends post-1990.
+- **Predictive Healthcare:** Supports AI-driven disease prediction, environmental health impact studies, and risk assessment.
+- **Medical & Research Use:** Provides a diverse dataset for healthcare AI, scientific publications, and policy decisions.
+
+---
+
+## Dashboard Links
+
+- **Past and Current Trends:**  
+  https://app.powerbi.com/view?r=eyJrIjoiYmNjM2M3MDctYjhjMy00YzdhLTljZmEtNjlkMDBmMmFjMmYzIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
+
+- **Predicted Future Trends:**  
+  https://app.powerbi.com/view?r=eyJrIjoiNDQyMzFkMWEtOTcxYi00NmQwLThlNTYtNTkxOTUyMDVlZDUwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9
 
 ---
 
 ## Client-Provided Datasets
 
 ### **ENGR-E 483_583_Patients_Data.xlsx**
-
 This dataset contains patient profiles with unique records for each patient.
 
 <img width="332" height="299" alt="Patients" src="https://github.com/user-attachments/assets/e9c68033-7909-4de9-b73f-4f965277da2e" />
@@ -24,7 +40,6 @@ This dataset contains patient profiles with unique records for each patient.
 ---
 
 ### **ENGR-E 483_583_Medical_History_final.xlsx**
-
 This dataset contains diagnosis records associated with patients and captures their medical history.
 
 <img width="395" height="157" alt="medical_records" src="https://github.com/user-attachments/assets/420902e8-ea15-45ea-9f36-dd719f718ae7" />
@@ -32,7 +47,6 @@ This dataset contains diagnosis records associated with patients and captures th
 ---
 
 ### **ENGR-E 483_583_Health_Events_cleaned.xlsx**
-
 This dataset includes health events such as hospitalizations and other medical visits associated with patients.
 
 If a patient is diagnosed with a disease, it is assumed that the reason for the health event could be related to the health condition they are suffering from. While this may not be a fully valid real-world assumption, it was made to simplify the analysis, as the data is mocked-up.
@@ -114,5 +128,3 @@ Together, these models complement the dashboard’s descriptive visualizations b
 This project brings together individual-level health records and broader state-level context to create a richer, more interpretable view of life expectancy patterns across the U.S. By integrating patient profiles, medical history, and healthcare events with environmental (AQI) and healthcare access indicators, the dashboard enables state-by-state comparison of how chronic disease burden, behavioral choices, and external conditions relate to longevity outcomes. Because the client-provided data is mocked and does not explicitly link events to specific conditions, we made transparent simplifying assumptions to derive consistent longevity measures and support meaningful visual exploration.
 
 Beyond descriptive insights, the forecasting components extend the dashboard into a forward-looking tool. CatBoost-based prevalence forecasting provides short- and medium-term signals on potential future disease burden, while the Random Survival Forest model offers a way to estimate survival risk patterns using the derived longevity proxy and contextual features. Together, these outputs support comparative analysis and early planning—while also highlighting opportunities for future improvement, such as incorporating per-capita normalization, stronger event–condition linkage, and validation with real clinical timelines.
-
-
